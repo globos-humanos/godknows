@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pydantic
+requests
+docling
+pymupdf
+paddleocr
+paddlepaddle
+chromadb
