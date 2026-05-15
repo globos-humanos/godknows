@@ -86,7 +86,6 @@ router.get('/:id/status', authenticateJWT, async (req: AuthRequest, res) => {
   }
 });
 
-export default router;
 
 // Webhook endpoint for the Python worker to send chunks back
 router.post('/:id/chunks', async (req, res) => {
@@ -122,3 +121,5 @@ router.post('/:id/chunks', async (req, res) => {
     res.status(500).json({ message: 'Server error' });
   }
 });
+
+export default router;
